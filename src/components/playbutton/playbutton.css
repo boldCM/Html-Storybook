@@ -1,0 +1,12 @@
+.playbtn {
+  border-radius: 20px;
+  font-size: 1.2rem;
+  color: white;
+  background: linear-gradient(0deg, #d9519d, #ed8770);
+  border: none;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-around;
+  width: 100px;
+  align-items: center;
+}
