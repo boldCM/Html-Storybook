@@ -1,0 +1,35 @@
+.sharebtn {
+  border-radius: 20px;
+  border-style: solid;
+  border-color: white;
+  font-size: 0.9rem;
+  color: white;
+  background: transparent;
+  letter-spacing: 0.16px;
+  padding: 10px 20px;
+  display: flex;
+  text-align: left;
+  opacity: 1;
+
+  /* justify-content: space-around; */
+  /* Das kann ich auch über img tag und margin gelöst werden s.u. */
+  /* width: 100px; */
+  /* Da noch kein Content da ist,
+  sieht der Button ohne width blöd aus, 
+  aber sobald der Content da ist, 
+  passt er sich an das Eltern-Element an */
+  align-items: center;
+}
+.sharebtn > img {
+  margin-right: 10px;
+  /* top: 346px;
+  left: 72px;
+  width: 9px;
+  height: 10px; */
+  opacity: 1;
+  background: 0% 0% no-repeat padding-box;
+}
+
+img {
+  width: 1rem;
+}
