@@ -11,7 +11,13 @@
 }
 .Description {
   font-size: 0.75rem;
-  text-align-last: left;
+  /* text-align-last: left; */
+  /* display: flex; */
+  /* justify-content: left; */
+  position: absolute;
+  /* display: block;
+  align-content: flex-end; */
+
   /* justify-content: ; */
   /* direction: rtl; */
 }
