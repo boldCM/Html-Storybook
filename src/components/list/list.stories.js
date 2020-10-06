@@ -1,6 +1,6 @@
 import "./list.css";
 import List from "./list.html";
 
-export default { List: "Components/List" };
+export default { title: "Components/list" };
 
 export const listThemes = () => List;
