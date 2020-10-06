@@ -1,5 +1,4 @@
-import "./sharebutton.css";
-import "./playbutton.css";
+import "./button.css";
 
 import shareButtonText from "./sharebutton.html";
 import playButtonText from "./playbutton-text.html";
