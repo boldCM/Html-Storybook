@@ -1,9 +1,12 @@
 import "./sharebutton.css";
-import shareButtonText from "./sharebutton.html";
+import "./playbutton.css";
 
+import shareButtonText from "./sharebutton.html";
+import playButtonText from "./playbutton-text.html";
 import heartButtonText from "./heartbutton.html";
 
-export default { title: "Components/transparentbutton" };
+export default { title: "Components/Button" };
 
-export const withText = () => shareButtonText;
+export const withPlay = () => playButtonText;
+export const withShare = () => shareButtonText;
 export const withHeart = () => heartButtonText;
