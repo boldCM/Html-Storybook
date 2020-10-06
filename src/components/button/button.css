@@ -1,8 +1,38 @@
+img {
+  width: 1rem;
+}
+.btn-primary {
+  background: linear-gradient(0deg, #d9519d, #ed8770);
+  border: none;
+}
+.btn > img {
+  margin-right: 10px;
+}
+
+.btn-secondary {
+  border-style: solid;
+  border-color: white;
+  background: transparent;
+}
+
 .btn {
   border-radius: 20px;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   color: white;
-  background: #016b6b;
-  border: none;
+  letter-spacing: 0.16px;
   padding: 10px 20px;
+  display: flex;
+  text-align: left;
+  opacity: 1;
+
+  /* justify-content: space-around; */
+  /* Das kann ich auch über img tag und margin gelöst werden s.u. */
+  /* width: 100px; */
+  /* Da noch kein Content da ist,
+  sieht der Button ohne width blöd aus, 
+  aber sobald der Content da ist, 
+  passt er sich an das Eltern-Element an */
+  align-items: center;
+  min-width: 75px;
+  justify-content: center;
 }
