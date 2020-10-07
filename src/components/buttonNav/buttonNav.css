@@ -7,6 +7,8 @@ nav {
   width: 100vw;
   align-content: center;
   border-top: solid 1px grey;
+  left: 0px;
+  padding: 10px 0;
 }
 
 .navIcons {
@@ -20,23 +22,7 @@ nav {
   color: #d9519d;
   border: none;
 }
-/* img {
-  width: 1rem;
+
+img {
+  width: 1.7rem;
 }
-
-
-.btn {
-  border-radius: 20px;
-  font-size: 0.9rem;
-  color: white;
-  letter-spacing: 0.16px;
-  padding: 10px 20px;
-  display: flex;
-  text-align: left;
-  opacity: 1;
-
-
-  align-items: center;
-  min-width: 75px;
-  justify-content: center;
-} */
