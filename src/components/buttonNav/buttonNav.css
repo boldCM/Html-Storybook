@@ -1,14 +1,13 @@
-nav {
+.footer {
   display: flex;
   position: fixed;
   bottom: 0px;
-  /* align-items: flex-end; */
   justify-content: space-around;
   width: 100vw;
   align-content: center;
-  border-top: solid 1px grey;
   left: 0px;
   padding: 10px 0;
+  box-shadow: -5px -5px 10px black;
 }
 
 .navIcons {
