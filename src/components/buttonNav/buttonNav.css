@@ -1,19 +1,29 @@
-img {
-  width: 1rem;
-}
-.btn-primary {
-  background: linear-gradient(0deg, #d9519d, #ed8770);
-  border: none;
-}
-.btn > img {
-  margin-right: 10px;
+nav {
+  display: flex;
+  position: fixed;
+  bottom: 0px;
+  /* align-items: flex-end; */
+  justify-content: space-around;
+  width: 100vw;
+  align-content: center;
+  border-top: solid 1px grey;
 }
 
-.btn-secondary {
-  border-style: solid;
-  border-color: white;
-  background: transparent;
+.navIcons {
+  border: none;
+  background-color: transparent;
+  color: #63666e;
+  padding-top: 10px;
 }
+
+.navActive {
+  color: #d9519d;
+  border: none;
+}
+/* img {
+  width: 1rem;
+}
+
 
 .btn {
   border-radius: 20px;
@@ -25,14 +35,8 @@ img {
   text-align: left;
   opacity: 1;
 
-  /* justify-content: space-around; */
-  /* Das kann ich auch über img tag und margin gelöst werden s.u. */
-  /* width: 100px; */
-  /* Da noch kein Content da ist,
-    sieht der Button ohne width blöd aus, 
-    aber sobald der Content da ist, 
-    passt er sich an das Eltern-Element an */
+
   align-items: center;
   min-width: 75px;
   justify-content: center;
-}
+} */
