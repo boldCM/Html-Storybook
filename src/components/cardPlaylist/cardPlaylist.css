@@ -1,0 +1,27 @@
+.cardPlaylist {
+  background-image: url("../../assets/DJ.png");
+  left: 0px;
+  width: 188px;
+  height: 128px;
+
+  opacity: 0.55;
+  color: #eeeeee;
+  display: flex;
+  align-items: flex-end;
+}
+.Description {
+  font-size: 0.75rem;
+  /* text-align-last: left; */
+  /* display: flex; */
+  /* justify-content: left; */
+  position: absolute;
+  /* display: block;
+  align-content: flex-end; */
+
+  /* justify-content: ; */
+  /* direction: rtl; */
+}
+
+/* .cardPlaylist > img { */
+/* text-align: right; */
+/* } */
