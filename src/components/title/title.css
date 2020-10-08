@@ -1,8 +1,21 @@
-.title {
-  height: 100vh;
+.title > img {
+  /* height: 100vh; */
+  /* width: 100wh; */
   display: grid;
   place-items: center;
+  width: 10rem;
+  height: 10rem;
 }
-.title > h1 {
-  margin: 0;
+
+/* .title > img { */
+/* width: 10rem; */
+/* height: 10rem; */
+/* padding-bottom: 0; */
+/* margin-bottom: 0; */
+/* } */
+/*  */
+.titleHeader {
+  /* margin-bottom: 50rem; */
+  text-align: center;
+  padding-top: 1rem;
 }
