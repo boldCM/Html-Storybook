@@ -1,10 +1,7 @@
 .title > img {
   /* height: 100vh; */
   /* width: 100wh; */
-  display: grid;
-  place-items: center;
-  width: 10rem;
-  height: 10rem;
+  width: 7rem;
 }
 
   
