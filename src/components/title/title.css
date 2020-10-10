@@ -1,9 +1,8 @@
 .titleImg {
-  width: 7rem;
+  width: 8rem;
 }
 
 .titleHeader {
-  /* margin-bottom: 50rem; */
   text-align: center;
-  padding-top: 1rem;
+  padding-top: 10px;
 }
