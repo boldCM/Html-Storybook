@@ -1,6 +1,47 @@
-.title {
-  text-align: center;
+.sidebar {
+  list-style-type: none;
 }
-.title > h1 {
-  margin: 0;
+
+.btn-sidebar {
+  background: transparent;
+  color: white;
+  border: none;
+  display: grid;
+  grid-template-columns: 55px 1fr;
+  grid-template-rows: repeat (6, 60px);
+
+  align-items: center;
+  margin: -3px;
+}
+.btn-sidebar > span {
+  grid-column-start: 2;
+  border-top: solid #63666e 0.1mm;
+  border-bottom: solid #63666e 0.1mm;
+  padding: 15px 0;
+}
+
+.btn-sidebar > img {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.iconAudio {
+  width: 22px;
+  height: 15px;
+}
+.iconDisplay {
+  width: 22px;
+  height: 15px;
+}
+
+.iconHeadset {
+  width: 22px;
+  height: 22px;
+}
+.iconLockscreen {
+  width: 18px;
+  height: 24px;
+}
+.iconOther {
+  width: 22px;
+  height: 22px;
 }
