@@ -1,33 +1,5 @@
 .app-layout {
-  display: grid;
-  grid-template-rows: 67px auto 67 px;
+  /* display: grid;
+  grid-template-rows: 67px auto 67 px; */
   height: 100vh;
-}
-
-.footer {
-  display: flex;
-  position: fixed;
-  bottom: 0px;
-  justify-content: space-around;
-  width: 100vw;
-  align-content: center;
-  left: 0px;
-  padding: 10px 0;
-  box-shadow: -5px -5px 10px black;
-}
-
-.navIcons {
-  border: none;
-  background-color: transparent;
-  color: #63666e;
-  padding-top: 10px;
-}
-
-.navActive {
-  color: #d9519d;
-  border: none;
-}
-
-img {
-  width: 1.7rem;
 }
