@@ -1,24 +1,20 @@
-.footer {
+.navFooter {
   display: flex;
   position: fixed;
   bottom: 0px;
-
   justify-content: space-around;
   width: 100vw;
-  /* align-content: center; */
-  /* left: 0px; */
   padding: 10px 0;
-  /* padding: 12px 8px; */
   box-shadow: -5px -5px 10px black;
 }
-.navIcons {
+.navFooter__Icons {
   border: none;
   background-color: transparent;
   color: #63666e;
   /* padding-top: 10px; */
 }
 
-.navActive {
+.navFooter--Active {
   color: #d9519d;
   border: none;
 }
