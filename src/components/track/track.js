@@ -8,6 +8,7 @@ export function createTrackElement() {
   const divTrack = document.createElement("div");
   const h2Element = document.createElement("h2");
   const h6Element = document.createElement("h6");
+  const buttonElement = document.createElement("button");
   const playElement = document.createElement("img");
   const trackElementImg = document.createElement("img");
 
@@ -19,9 +20,14 @@ export function createTrackElement() {
   divContainer.className = "track";
   trackElementImg.className = "albumIcon";
   divTrack.className = "titleArtist";
-  playElement.className = "playIcon";
+  buttonElement.className = "playIcon";
 
+  buttonElement.append(playElement);
   divTrack.append(h2Element, h6Element);
-  divContainer.append(trackElementImg, divTrack, playElement);
+  divContainer.append(trackElementImg, divTrack, buttonElement);
+
+  buttonElement.onclick = function () {
+    alert("click!");
+  };
   return divContainer;
 }

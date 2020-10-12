@@ -29,5 +29,7 @@
 /* playbutton */
 .playIcon {
   grid-column-start: 3;
-  width: 22px;
+
+  background: transparent;
+  border: none;
 }
