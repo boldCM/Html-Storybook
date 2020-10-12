@@ -5,10 +5,10 @@ import trackImg from "../../assets/michaelJackson.png";
 
 export function createTrackElement(title, artist) {
   const divContainer = document.createElement("div");
-  divContainer.className = "track";
+  divContainer.className = "trackContainer";
 
-  const divTrack = document.createElement("div");
-  divTrack.className = "titleArtist";
+  const divText = document.createElement("div");
+  divText.className = "titleArtist";
 
   const h2title = document.createElement("h2");
   h2title.innerText = title;
@@ -30,8 +30,8 @@ export function createTrackElement(title, artist) {
   trackElementImg.className = "albumIcon";
 
   buttonElement.append(playElementImg);
-  divTrack.append(h2title, h6artist);
-  divContainer.append(trackElementImg, divTrack, buttonElement);
+  divText.append(h2title, h6artist);
+  divContainer.append(trackElementImg, divText, buttonElement);
 
   return divContainer;
 }

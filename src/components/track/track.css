@@ -1,10 +1,10 @@
 /* container */
-.track {
+.trackContainer {
   display: grid;
   grid-template-columns: auto 1fr auto;
   place-items: center;
 }
-.track :last-child {
+.trackContainer :last-child {
   margin-right: 10px;
 }
 /* trackImg */
