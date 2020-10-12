@@ -1,0 +1,33 @@
+/* container */
+.track {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  place-items: center;
+}
+.track :last-child {
+  margin-right: 10px;
+}
+/* trackImg */
+.albumIcon {
+  grid-column-start: 1;
+  /* width: 20px; */
+  margin: 10px;
+}
+
+/* text */
+.titleArtist {
+  /* grid-column-start: 2; */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.titleArtist > * {
+  margin: 5px;
+}
+
+/* playbutton */
+.playIcon {
+  grid-column-start: 3;
+  width: 22px;
+}

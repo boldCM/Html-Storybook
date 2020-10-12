@@ -1,4 +1,7 @@
-import playElementImg from "../../assets/play.svg";
+import "./track.css";
+
+import playElementImg from "../../assets/playActive.svg";
+import trackImg from "../../assets/michaelJackson.png";
 
 export function createTrackElement() {
   const divContainer = document.createElement("div");
@@ -6,14 +9,19 @@ export function createTrackElement() {
   const h2Element = document.createElement("h2");
   const h6Element = document.createElement("h6");
   const playElement = document.createElement("img");
-  const trackImg = document.createElement("img");
+  const trackElementImg = document.createElement("img");
 
   h2Element.innerText = "Billie Jean";
   h6Element.innerText = "Michael Jackson";
   playElement.src = playElementImg;
-  trackImg.src = "src/assets/icon-burger-menu.svg";
+  trackElementImg.src = trackImg;
+
+  divContainer.className = "track";
+  trackElementImg.className = "albumIcon";
+  divTrack.className = "titleArtist";
+  playElement.className = "playIcon";
 
   divTrack.append(h2Element, h6Element);
-  divContainer.append(trackImg, divTrack, playElement);
+  divContainer.append(trackElementImg, divTrack, playElement);
   return divContainer;
 }
