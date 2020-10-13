@@ -2,7 +2,7 @@
   list-style-type: none;
 }
 
-.btn-sidebar {
+.sidebar__btn {
   background: transparent;
   color: white;
   border: none;
@@ -14,7 +14,7 @@
   margin: -3px;
 }
 
-.btn-sidebar > span {
+.sidebar__btn > span {
   grid-column-start: 2;
   border-bottom: solid #63666e 0.1mm;
   padding: 15px 0;
@@ -25,28 +25,30 @@
   border: none;
 }
 
-.btn-sidebar > img {
+.sidebar__btn > img {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-.iconAudio {
+.sidebar__iconAudio {
   width: 22px;
   height: 15px;
 }
-.iconDisplay {
+.sidebar__iconDisplay {
   width: 22px;
   height: 15px;
 }
 
-.iconHeadset {
+.sidebar__iconHeadset {
   width: 22px;
   height: 22px;
 }
-.iconLockscreen {
+
+.sidebar__iconLockscreen {
   width: 18px;
   height: 24px;
 }
-.iconOther {
+
+.sidebar__iconOther {
   width: 22px;
   height: 22px;
 }

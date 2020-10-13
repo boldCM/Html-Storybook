@@ -1,7 +1,7 @@
-.btn-img {
+.btn__img {
   width: 1rem;
 }
-.btn-primary {
+.btn--primary {
   background: linear-gradient(0deg, #d9519d, #ed8770);
   border: none;
 }
@@ -9,7 +9,7 @@
   margin-right: 10px;
 }
 
-.btn-secondary {
+.btn--secondary {
   border-style: solid;
   border-color: white;
   background: transparent;

@@ -11,7 +11,7 @@
   margin-top: 14px;
   margin-left: 10px;
 }
-.settingsHeader {
+.settings__Header {
   display: grid;
   grid-column-start: 3;
   text-align: center;
