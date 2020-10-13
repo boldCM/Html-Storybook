@@ -24,9 +24,11 @@ export function createTrackElement(title, artist) {
 
   const playElementImg = document.createElement("img");
   playElementImg.src = playImg;
+  playElementImg.alt = "Icon of Play-Action button";
 
   const trackElementImg = document.createElement("img");
   trackElementImg.src = trackImg;
+  trackElementImg.alt = "Image of Album";
   trackElementImg.className = "albumIcon";
 
   buttonElement.append(playElementImg);
