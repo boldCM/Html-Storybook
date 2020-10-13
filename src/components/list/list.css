@@ -21,6 +21,10 @@
   text-align: left;
 }
 
+.last--listItem > span {
+  border: none;
+}
+
 .btn-sidebar > img {
   margin-top: 5px;
   margin-bottom: 5px;
