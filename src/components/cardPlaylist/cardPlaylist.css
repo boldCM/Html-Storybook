@@ -9,7 +9,7 @@
   display: flex;
   align-items: flex-end;
 }
-.Description {
+.cardPlaylist__description {
   font-size: 0.75rem;
   /* text-align-last: left; */
   /* display: flex; */

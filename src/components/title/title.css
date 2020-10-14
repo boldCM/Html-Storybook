@@ -3,11 +3,11 @@
   place-items: center;
 }
 
-.titleImg {
+.title__Img {
   width: 8rem;
 }
 
-.titleHeader {
+.title__Header {
   text-align: center;
   padding-top: 10px;
 }
