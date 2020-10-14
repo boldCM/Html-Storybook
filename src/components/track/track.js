@@ -3,6 +3,8 @@ import "./track.css";
 import playImg from "../../assets/playActive.svg";
 // import trackImg from "../../assets/michaelJackson.png";
 
+import pauseImg from "../../assets/icon-pause-gradient.svg";
+
 export function createTrackElement(track) {
   const divContainer = document.createElement("div");
   divContainer.className = "trackContainer";
@@ -18,14 +20,40 @@ export function createTrackElement(track) {
 
   const buttonElement = document.createElement("button");
   buttonElement.className = "playIcon";
-  buttonElement.onclick = function () {
-    audioElement.play();
-    alert("click!");
+
+  const showPlayButton = (element) => {
+    element.src = playImg;
+    element.alt = "Play Icon";
+  };
+
+  const showPauseButton = (element) => {
+    element.src = pauseImg;
+    element.alt = "Pause Icon";
+  };
+
+  let isPlaying = false;
+  buttonElement.onclick = () => {
+    if (isPlaying) {
+      audioElement.pause();
+
+      showPlayButton(playElementImg);
+    } else {
+      audioElement.play();
+
+      showPauseButton(playElementImg);
+    }
+    isPlaying = !isPlaying;
   };
 
   const playElementImg = document.createElement("img");
   playElementImg.src = playImg;
   playElementImg.alt = "Icon of Play-Action button";
+
+  // const pauseElementImg = document.createElement("img");
+  // pauseElementImg.src = pauseImg;
+  // pauseElementImg.alt = "Icon for Pause";
+  // das erstellen vom html-elemnt kann ich mir dann sparen
+  // wenn ich oben nur die src importiere und in meiner button funktion ändere
 
   const trackElementImg = document.createElement("img");
   trackElementImg.src = track.imgSrc;
@@ -35,6 +63,7 @@ export function createTrackElement(track) {
   const audioElement = new Audio(track.audioSrc);
 
   buttonElement.append(playElementImg);
+
   divText.append(h2title, h6artist);
   divContainer.append(trackElementImg, divText, buttonElement);
 
