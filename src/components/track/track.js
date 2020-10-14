@@ -21,30 +21,37 @@ export function createTrackElement(track) {
   const buttonElement = document.createElement("button");
   buttonElement.className = "playIcon";
 
-  let isPlaying = false;
-  buttonElement.onclick = function () {
-    if (isPlaying === true) {
-      audioElement.pause();
-      isPlaying = false;
-      pauseElementImg.replaceWith(playElementImg);
+  const showPlayButton = (element) => {
+    element.src = playImg;
+    element.alt = "Play Icon";
+  };
 
-      // Oder: playElementImg.src= playImg;
-      // anstelle von replaceWith(...)
+  const showPauseButton = (element) => {
+    element.src = pauseImg;
+    element.alt = "Pause Icon";
+  };
+
+  let isPlaying = false;
+  buttonElement.onclick = () => {
+    if (isPlaying) {
+      audioElement.pause();
+
+      showPlayButton(playElementImg);
     } else {
       audioElement.play();
-      isPlaying = true;
-      playElementImg.replaceWith(pauseElementImg);
+
+      showPauseButton(playElementImg);
     }
-    // alert("click!");
+    isPlaying = !isPlaying;
   };
 
   const playElementImg = document.createElement("img");
   playElementImg.src = playImg;
   playElementImg.alt = "Icon of Play-Action button";
 
-  const pauseElementImg = document.createElement("img");
-  pauseElementImg.src = pauseImg;
-  pauseElementImg.alt = "Icon for Pause";
+  // const pauseElementImg = document.createElement("img");
+  // pauseElementImg.src = pauseImg;
+  // pauseElementImg.alt = "Icon for Pause";
   // das erstellen vom html-elemnt kann ich mir dann sparen
   // wenn ich oben nur die src importiere und in meiner button funktion ändere
 
