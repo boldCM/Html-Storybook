@@ -29,26 +29,26 @@
   margin-top: 5px;
   margin-bottom: 5px;
 }
-.sidebar__iconAudio {
+.sidebar__icon--Audio {
   width: 22px;
   height: 15px;
 }
-.sidebar__iconDisplay {
+.sidebar__icon--Display {
   width: 22px;
   height: 15px;
 }
 
-.sidebar__iconHeadset {
+.sidebar__icon--Headset {
   width: 22px;
   height: 22px;
 }
 
-.sidebar__iconLockscreen {
+.sidebar__icon--Lockscreen {
   width: 18px;
   height: 24px;
 }
 
-.sidebar__iconOther {
+.sidebar__icon--Other {
   width: 22px;
   height: 22px;
 }
