@@ -1,7 +1,6 @@
 import "./track.css";
 import { createElement } from "../../utils/element";
 import playImg from "../../assets/playActive.svg";
-// import trackImg from "../../assets/michaelJackson.png";
 
 import pauseImg from "../../assets/icon-pause-gradient.svg";
 
