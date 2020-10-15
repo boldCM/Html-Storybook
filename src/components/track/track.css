@@ -1,14 +1,13 @@
-/* container */
 .trackContainer {
   display: grid;
   grid-template-columns: auto 1fr auto;
-  place-items: center;
 }
+
 .trackContainer :last-child {
   margin-right: 10px;
 }
-/* trackImg */
-.albumIcon {
+
+.trackContainer__albumIcon {
   grid-column-start: 1;
   width: 46px;
   height: 46px;
@@ -18,27 +17,29 @@
   object-fit: cover;
 }
 
-/* text */
-.titleArtist {
-  /* grid-column-start: 2; */
+.trackContainer__div__text {
+  grid-column-start: 2;
   display: flex;
   flex-direction: column;
   width: 100%;
   color: #a3a4ab;
+  margin: 5px;
   /* color noch in global.css einfügen! */
   /* artistcolor: foot-note: #595b68 */
-  border-bottom: 1px solid #595b68;
-  /* für die Linie ein weiteres div mit rackartist und playicon oder pseudo-element */
 }
 
-.titleArtist > * {
+.trackContainer__div {
+  border-bottom: 1px solid #595b68;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+}
+
+.trackContainer__div__text--title {
   margin: 5px;
 }
 
-/* playbutton */
-.playIcon {
+.trackContainer__playIcon {
   grid-column-start: 3;
-
   background: transparent;
   border: none;
   /* outline:none */
