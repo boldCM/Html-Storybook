@@ -4,7 +4,7 @@ export default { title: "Components/Track" };
 
 export const songs = () => {
   let BeatIt = {
-    track: "Beat it",
+    title: "Beat it",
     artist: "Michael Jackson",
     imgSrc:
       "https://www.thewowstyle.com/wp-content/uploads/2015/01/Michael-Jackson.png",
