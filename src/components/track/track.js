@@ -7,27 +7,14 @@ import pauseImg from "../../assets/icon-pause-gradient.svg";
 export function createTrackElement(track) {
   const audioElement = new Audio(track.audioSrc);
 
-  // cnst playAction = createElement("img", {
-  //   src:o playImg,
-  // });
-
-  const showPlayElement = createElement("img", {
+  const iconElement = createElement("img", {
     src: playImg,
-    alt: "Play Icon",
+    // alt: "Play Icon",
   });
-
-  const showPauseElement = createElement("img", {
-    src: pauseImg,
-    alt: "Pause Icon",
-  });
-  // const showIcon = (element) => {
-  //   element.src=
-  // }
 
   const trackElement = createElement("div", {
     className: "trackContainer",
-    // innerText: "Replace Me!",
-    // onclick: () => alert("clicked"),
+
     children: [
       createElement("img", {
         className: "albumIcon",
@@ -47,27 +34,40 @@ export function createTrackElement(track) {
       }),
       createElement("button", {
         className: "playIcon",
+        children: [iconElement],
         onclick: () => {
           if (!audioElement.paused) {
             audioElement.pause();
+
+            showPlayElement(iconElement);
           } else {
             audioElement.play();
-            Object.assign(showPauseElement, showPElement);
+            showPauseElement(iconElement);
           }
         },
 
-        children: [
-          createElement("img", {
-            src: playImg,
-            alt: "Play Icon",
-          }),
-        ],
+        // children: [
+        //   createElement("img", {
+        //     src: playImg,
+        //     alt: "Play Icon",
+        //   }),
+        // ],
       }),
     ],
   });
 
   return trackElement;
 }
+
+const showPlayElement = (element) => {
+  element.src = playImg;
+  element.alt = "Play Icon";
+};
+
+const showPauseElement = (element) => {
+  element.src = pauseImg;
+  element.alt = "Pause Icon";
+};
 
 //   const divContainer = document.createElement("div");
 //   divContainer.className = "trackContainer";
