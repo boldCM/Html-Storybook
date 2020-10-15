@@ -17,41 +17,41 @@ export function createTrackElement(track) {
 
     children: [
       createElement("img", {
-        className: "albumIcon",
+        className: "trackContainer__albumIcon",
         src: track.imgSrc,
         alt: "Image of Album",
       }),
       createElement("div", {
-        className: "trackSelection",
+        className: "trackContainer__div",
         children: [
-          createElement("h2", {
-            innerText: track.title,
+          createElement("div", {
+            className: "trackContainer__div__text",
+            children: [
+              createElement("h2", {
+                className: "trackContainer__div__text--title",
+                innerText: track.title,
+              }),
+              createElement("h6", {
+                className: "trackContainer__div__text--title",
+                innerText: track.artist,
+              }),
+            ],
           }),
-          createElement("h6", {
-            innerText: track.artist,
+          createElement("button", {
+            className: "trackContainer__playIcon",
+            children: [iconElement],
+            onclick: () => {
+              if (!audioElement.paused) {
+                audioElement.pause();
+
+                showPlayElement(iconElement);
+              } else {
+                audioElement.play();
+                showPauseElement(iconElement);
+              }
+            },
           }),
         ],
-      }),
-      createElement("button", {
-        className: "playIcon",
-        children: [iconElement],
-        onclick: () => {
-          if (!audioElement.paused) {
-            audioElement.pause();
-
-            showPlayElement(iconElement);
-          } else {
-            audioElement.play();
-            showPauseElement(iconElement);
-          }
-        },
-
-        // children: [
-        //   createElement("img", {
-        //     src: playImg,
-        //     alt: "Play Icon",
-        //   }),
-        // ],
       }),
     ],
   });
