@@ -1,0 +1,10 @@
+.playBottomNav {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  place-items: center;
+  margin: 0 30%;
+}
+
+.playBottomNav__playGreyIcon {
+  width: 40px;
+}
