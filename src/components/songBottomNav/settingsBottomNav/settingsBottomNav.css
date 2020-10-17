@@ -1,0 +1,26 @@
+.settingsBottomNav {
+  display: grid;
+  grid-template-columns: repeat (5, 20%);
+  place-items: center;
+}
+
+.settingsBottomNav > * {
+  border: 1px white solid;
+  width: 50px;
+}
+
+.settingsBottomNav > * > img {
+  margin: 1rem auto;
+  height: 1rem;
+}
+
+.settingsBottomNav > * > * {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  text-align: center;
+  font-size: 9px;
+}
+
+.settingsBottomNav__favourites {
+  grid-column-start: 5;
+}
