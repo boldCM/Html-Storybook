@@ -7,10 +7,20 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #c1c0c0;
+  --active-color: #d9519d;
+  --gradient-color: #ed8770;
+  --bottom-nav-color: #63666e;
+  --card-subtitle-color: #c1c0c0;
+  --card-title-color: #eeeeee;
+  --border-color: #ffffff57;
+}
+
 html {
   font-size: 16px;
   background-color: #181b2c;
-  color: #ffffff;
+  color: #a3a4ab;
 }
 
 body {

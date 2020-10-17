@@ -10,12 +10,12 @@
 .navFooter__Icons {
   border: none;
   background-color: transparent;
-  color: #63666e;
+  color: var(--bottom-nav-color);
   /* padding-top: 10px; */
 }
 
 .navFooter__Icons--Active {
-  color: #d9519d;
+  color: var(--active-color);
   border: none;
 }
 

@@ -5,7 +5,7 @@
   height: 128px;
 
   opacity: 0.55;
-  color: #eeeeee;
+  color: var(--card-title-color);
   display: flex;
   align-items: flex-end;
 }
@@ -15,6 +15,7 @@
   /* display: flex; */
   /* justify-content: left; */
   position: absolute;
+  color: var(--card-subtitle-color);
   /* display: block;
   align-content: flex-end; */
 

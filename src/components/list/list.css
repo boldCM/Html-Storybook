@@ -4,7 +4,7 @@
 
 .sidebar__btn {
   background: transparent;
-  color: white;
+  color: var(--primary-color);
   border: none;
   display: grid;
   grid-template-columns: 55px 1fr;
@@ -16,7 +16,7 @@
 
 .sidebar__btn > span {
   grid-column-start: 2;
-  border-bottom: solid #63666e 0.1mm;
+  border-bottom: solid var(--bottom-nav-color) 0.1mm;
   padding: 15px 0;
   text-align: left;
 }
