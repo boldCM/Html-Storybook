@@ -33,15 +33,13 @@
   grid-template-columns: auto 1fr auto;
 }
 
-
 .titleArtist > h6 {
   color: var(--card-subtitle-color);
 }
 
-.titleArtist > * {
+/* .titleArtist > * { */
 
 .trackContainer__div__text--title {
-
   margin: 5px;
 }
 
