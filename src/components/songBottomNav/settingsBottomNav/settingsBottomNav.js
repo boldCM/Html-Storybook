@@ -25,6 +25,7 @@ const equalizerIcon = createElement("img", {
 const favouritesIcon = createElement("img", {
   src: favourites,
   alt: "favourites Icon",
+  className: "settingsBottomNav__favourites",
 });
 
 // Hilfsfunktion iconTitle:
@@ -37,24 +38,24 @@ const createIconTitle = (iconText) => {
 
 // Hier muss ich meine Hilfsfunktion drin aufrufen:
 const divPlaylist = createElement("div", {
-  className: "settingsBottomNav__playlist",
+  className: "settingsBottomNav__div",
   children: [playlistIcon, createIconTitle("Playlist")],
 });
 
 const divShuffle = createElement("div", {
-  className: "settingsBottomNav__shuffle",
+  className: "settingsBottomNav__div",
   children: [shuffleIcon, createIconTitle("Shuffle")],
 });
 const divRepeat = createElement("div", {
-  className: "settingsBottomNav__repeat",
+  className: "settingsBottomNav__div",
   children: [repeatIcon, createIconTitle("Repeat")],
 });
 const divEqualizer = createElement("div", {
-  className: "settingsBottomNav__eq",
+  className: "settingsBottomNav__div",
   children: [equalizerIcon, createIconTitle("EQ")],
 });
 const divFavourites = createElement("div", {
-  className: "settingsBottomNav__favourites",
+  className: "settingsBottomNav__div settingsBottomNav__div__favourites",
   children: [favouritesIcon, createIconTitle("Favourites")],
 });
 
